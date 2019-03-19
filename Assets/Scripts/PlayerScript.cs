@@ -43,6 +43,7 @@ public class PlayerScript: MonoBehaviour
                 else
                 {
                     PlayerPrefs.SetInt(string.Concat("Hs",i), score);
+                    score = 0;
                 }
             }
         }
