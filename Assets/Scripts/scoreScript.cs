@@ -10,7 +10,7 @@ public class scoreScript : MonoBehaviour
     void Start()
     {
         string outstr = "";
-        for(int i = 1; i<11; i++)
+        for(int i = 1; i<11; i++)//Use playerprefs to store a list of 10 values and then call them back out using concatenation and a for loop
         {
             outstr += string.Concat(string.Concat("\n",i),".) ");
             outstr += PlayerPrefs.GetInt(string.Concat("Hs",i), 0);

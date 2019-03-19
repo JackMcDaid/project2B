@@ -7,13 +7,12 @@ using UnityEngine.SceneManagement;
 public class Highbtn : MonoBehaviour
 {
     public Button high_button;
-    // Start is called before the first frame update
     void changeScene()
     {
         SceneManager.LoadScene("high_scores");
     }
     void Start()
-    {
+    {//simple button
         high_button.onClick.AddListener(changeScene);
     }
 }
